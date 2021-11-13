@@ -1,5 +1,10 @@
 import Client from '../src'
+import {config} from 'dotenv'
 
-const client = new Client('https://www.lernsax.de', "bistry.elias16@fsg.lernsax.de")
+config()
 
-client.login('Nexus-123')
+const client = new Client(process.env.BASEURL as string, process.env.USER as string)
+
+client.login(process.env.PASSWORD as string).then(async () => {
+    client.close()
+})

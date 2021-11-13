@@ -12,9 +12,8 @@
     "author": "",
     "license": "MIT",
     "dependencies": {
+        "cheerio": "^1.0.0-rc.10",
         "form-data": "^4.0.0",
-        "jquery": "^3.6.0",
-        "jsdom": "^17.0.0",
         "node-fetch": "^2.6.2",
         "tslint": "^6.1.3",
         "typescript": "^4.4.3"
@@ -25,9 +24,9 @@
     ],
     "typings": "./lib/index.d.ts",
     "devDependencies": {
-        "@types/jsdom": "^16.2.13",
         "@types/node": "^16.9.4",
         "@types/node-fetch": "^2.5.3",
+        "dotenv": "^10.0.0",
         "ts-node": "^10.2.1"
     }
 }

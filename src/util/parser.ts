@@ -1,5 +1,4 @@
-import { JSDOM } from "jsdom"
-
-export function htmlToDocument(html: string) {
-    return (new JSDOM(html)).window.document
+import { load, CheerioAPI } from "cheerio"
+export function htmlToCheerio(html: string): CheerioAPI {
+    return load(html)
 }
